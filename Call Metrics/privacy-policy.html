@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | CallMetrics</title>
+    <meta name="description"
+        content="Read the CallMetrics Privacy Policy to understand how GRANDBIZ LEARNING SOLUTIONS LLP collects, uses, stores, discloses and protects personal information.">
+    <meta name="theme-color" content="#050505">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --ink: #171717;
+            --navy: #050505;
+            --muted: #666;
+            --line: #e9e9e9;
+            --paper: #f7f7f7;
+            --white: #fff;
+            --accent: #d71920;
+            --accent-dark: #b51219;
+            --soft: #fce7e8;
+            --container: 1200px;
+            --radius: 18px
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 110px
+        }
+
+        body {
+            margin: 0;
+            color: var(--ink);
+            background: #fff;
+            font-family: "DM Sans", sans-serif;
+            font-size: 15px;
+            line-height: 1.75
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none
+        }
+
+        button {
+            font: inherit
+        }
+
+        .wrap {
+            width: min(var(--container), calc(100% - 48px));
+            margin-inline: auto
+        }
+
+        .nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, .97);
+            border-bottom: 1px solid #ededed;
+            box-shadow: 0 5px 24px rgba(0, 0, 0, .045);
+            backdrop-filter: blur(14px)
+        }
+
+        .nav>.wrap {
+            height: 82px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 28px
+        }
+
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            flex: 0 0 190px;
+            width: 190px;
+            height: 66px;
+            overflow: hidden
+        }
+
+        .logo img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: left center
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            gap: 12px
+        }
+
+        .btn {
+            min-height: 44px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            padding: 11px 19px;
+            border: 1px solid transparent;
+            border-radius: 9px;
+            font-size: 13px;
+            font-weight: 700;
+            transition: .25s ease;
+            cursor: pointer
+        }
+
+        .btn.amber {
+            background: var(--accent);
+            color: #fff;
+            box-shadow: 0 10px 24px #d7192030
+        }
+
+        .btn.amber:hover {
+            background: var(--accent-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 14px 28px #d7192040
+        }
+
+        .install-app-btn {
+            background: #fff;
+            color: #222;
+            border-color: #dedede
+        }
+
+        .install-app-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent)
+        }
+
+        .burger {
+            display: none;
+            width: 44px;
+            height: 44px;
+            border: 1px solid var(--line);
+            border-radius: 9px;
+            background: #fff;
+            color: #050505;
+            cursor: pointer
+        }
+
+        .burger span {
+            display: block;
+            width: 18px;
+            height: 2px;
+            margin: 4px auto;
+            background: currentColor;
+            border-radius: 3px
+        }
+
+        .page-hero {
+            position: relative;
+            overflow: hidden;
+            padding: 78px 0 72px;
+            background: radial-gradient(ellipse at 88% 5%, rgba(215, 25, 32, .13), transparent 32%), linear-gradient(135deg, #080808 0%, #191919 58%, #080808 100%);
+            color: #fff
+        }
+
+        .page-hero:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #d71920, transparent)
+        }
+
+        .hero-inner {
+            position: relative;
+            z-index: 1;
+            max-width: 850px
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0 0 17px;
+            color: #ff777b;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase
+        }
+
+        .eyebrow:before {
+            content: "";
+            width: 26px;
+            height: 2px;
+            background: var(--accent)
+        }
+
+        .page-hero h1 {
+            margin: 0 0 14px;
+            font-family: Manrope, sans-serif;
+            font-size: clamp(38px, 5.2vw, 62px);
+            line-height: 1.1;
+            letter-spacing: -2.4px;
+            font-weight: 800
+        }
+
+        .page-hero h1 span {
+            color: #f0444b
+        }
+
+        .hero-intro {
+            max-width: 720px;
+            margin: 0;
+            color: #d0d0d0;
+            font-size: 16px;
+            line-height: 1.8
+        }
+
+        .hero-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px 26px;
+            margin-top: 27px;
+            color: #c6c6c6;
+            font-size: 12px
+        }
+
+        .hero-meta span {
+            display: flex;
+            align-items: center;
+            gap: 8px
+        }
+
+        .hero-meta b {
+            color: #fff;
+            font-weight: 600
+        }
+
+        .hero-meta i {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--accent)
+        }
+
+        .policy-area {
+            padding: 68px 0 100px;
+            background: linear-gradient(180deg, #fff 0%, #fff 65%, #fafafa 100%)
+        }
+
+        .policy-layout {
+            display: grid;
+            grid-template-columns: 265px minmax(0, 1fr);
+            gap: 42px;
+            align-items: start
+        }
+
+        .policy-nav {
+            position: sticky;
+            top: 110px;
+            padding: 24px 20px;
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            background: #fff;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, .035)
+        }
+
+        .policy-nav h2 {
+            margin: 0 0 14px;
+            font-family: Manrope, sans-serif;
+            font-size: 14px;
+            font-weight: 800
+        }
+
+        .policy-nav ol {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            gap: 3px
+        }
+
+        .policy-nav a {
+            display: block;
+            padding: 7px 9px;
+            border-radius: 7px;
+            color: #666;
+            font-size: 12px;
+            line-height: 1.45;
+            transition: .2s
+        }
+
+        .policy-nav a:hover,
+        .policy-nav a.active {
+            background: var(--soft);
+            color: var(--accent);
+            font-weight: 700
+        }
+
+        .policy-content {
+            min-width: 0
+        }
+
+        .policy-intro {
+            margin: 0 0 22px;
+            padding: 23px 26px;
+            border: 1px solid #f0d8d9;
+            border-left: 4px solid var(--accent);
+            border-radius: 12px;
+            background: #fffafa;
+            color: #555
+        }
+
+        .policy-intro strong {
+            color: #171717
+        }
+
+        .policy-section {
+            scroll-margin-top: 105px;
+            margin: 0 0 18px;
+            padding: 27px 30px;
+            border: 1px solid var(--line);
+            border-radius: 15px;
+            background: #fff;
+            box-shadow: 0 8px 26px rgba(0, 0, 0, .025);
+            transition: border-color .25s, box-shadow .25s
+        }
+
+        .policy-section:hover {
+            border-color: #efc5c7;
+            box-shadow: 0 14px 32px rgba(120, 0, 0, .045)
+        }
+
+        .section-heading {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 15px
+        }
+
+        .section-number {
+            flex: 0 0 38px;
+            width: 38px;
+            height: 38px;
+            display: grid;
+            place-items: center;
+            border-radius: 10px;
+            background: var(--soft);
+            color: var(--accent);
+            font-family: Manrope, sans-serif;
+            font-size: 12px;
+            font-weight: 800
+        }
+
+        .policy-section h2 {
+            margin: 2px 0 0;
+            font-family: Manrope, sans-serif;
+            font-size: 21px;
+            line-height: 1.35;
+            letter-spacing: -.4px
+        }
+
+        .policy-section h3 {
+            margin: 22px 0 8px;
+            color: #202020;
+            font-family: Manrope, sans-serif;
+            font-size: 15px;
+            font-weight: 800
+        }
+
+        .policy-section h3:first-of-type {
+            margin-top: 18px
+        }
+
+        .policy-section p {
+            margin: 9px 0;
+            color: #5f5f5f
+        }
+
+        .policy-section ul {
+            margin: 10px 0 14px;
+            padding-left: 22px;
+            color: #5f5f5f
+        }
+
+        .policy-section li {
+            padding: 3px 0 3px 3px
+        }
+
+        .policy-section li::marker {
+            color: var(--accent)
+        }
+
+        .sub-label {
+            display: inline-block;
+            margin: 14px 0 0;
+            padding: 5px 10px;
+            border-radius: 6px;
+            background: #f7f7f7;
+            color: #242424;
+            font-size: 12px;
+            font-weight: 700
+        }
+
+        .contact-details {
+            padding: 18px 20px;
+            margin: 15px 0;
+            border-radius: 11px;
+            background: #f8f8f8;
+            border: 1px solid #eee
+        }
+
+        .contact-details p {
+            margin: 5px 0
+        }
+
+        .contact-details strong {
+            color: #222
+        }
+
+        .policy-end {
+            margin-top: 28px;
+            padding: 25px 28px;
+            border-radius: 14px;
+            background: #080808;
+            color: #fff
+        }
+
+        .policy-end p {
+            margin: 0;
+            color: #d0d0d0
+        }
+
+        .policy-end a {
+            color: #ff777b
+        }
+
+        .foot {
+            background: #050505;
+            color: #fff;
+            padding: 52px 0 0
+        }
+
+        .fg {
+            display: grid;
+            grid-template-columns: 1.3fr .7fr;
+            gap: 60px;
+            padding-bottom: 38px
+        }
+
+        .foot .logo {
+            width: 210px;
+            height: 82px;
+            /* background: #fff; */
+            border-radius: 9px;
+            padding: 5px;
+            margin-bottom: 14px
+        }
+
+        .foot p {
+            max-width: 390px;
+            margin: 0;
+            color: #c9c9c9;
+            font-size: 13px
+        }
+
+        .foot h4 {
+            margin: 8px 0 13px;
+            color: #f0444b;
+            font-family: Manrope, sans-serif;
+            font-size: 13px
+        }
+
+        .foot .contact-links {
+            display: grid;
+            justify-items: start;
+            gap: 8px
+        }
+
+        .foot a,
+        .foot span {
+            color: #c9c9c9;
+            font-size: 13px;
+            transition: .2s
+        }
+
+        .foot a:hover {
+            color: #fff
+        }
+
+        .fb {
+            padding: 17px 0 20px;
+            border-top: 1px solid #ffffff25;
+            color: #aaa;
+            font-size: 12px
+        }
+
+        .back-top {
+            position: fixed;
+            right: 22px;
+            bottom: 22px;
+            z-index: 20;
+            width: 42px;
+            height: 42px;
+            border: 0;
+            border-radius: 50%;
+            background: var(--accent);
+            color: #fff;
+            font-size: 19px;
+            box-shadow: 0 8px 22px #d7192040;
+            cursor: pointer;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(8px);
+            transition: .25s
+        }
+
+        .back-top.show {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0)
+        }
+
+        @media(max-width:900px) {
+            .policy-layout {
+                grid-template-columns: 220px minmax(0, 1fr);
+                gap: 24px
+            }
+
+            .policy-section {
+                padding: 24px
+            }
+
+            .policy-section h2 {
+                font-size: 19px
+            }
+        }
+
+        @media(max-width:700px) {
+            .wrap {
+                width: min(100% - 34px, var(--container))
+            }
+
+            .nav>.wrap {
+                height: 72px
+            }
+
+            .logo {
+                flex-basis: 158px;
+                width: 158px;
+                height: 58px
+            }
+
+            .burger {
+                display: block
+            }
+
+            .menu {
+                position: absolute;
+                top: 72px;
+                left: 0;
+                right: 0;
+                display: none;
+                align-items: stretch;
+                flex-direction: column;
+                padding: 18px 20px 22px;
+                background: #fff;
+                border-bottom: 1px solid var(--line);
+                box-shadow: 0 15px 25px rgba(0, 0, 0, .08)
+            }
+
+            .menu.open {
+                display: flex
+            }
+
+            .menu .btn {
+                width: 100%
+            }
+
+            .page-hero {
+                padding: 58px 0 54px
+            }
+
+            .page-hero h1 {
+                letter-spacing: -1.5px
+            }
+
+            .hero-intro {
+                font-size: 14px
+            }
+
+            .hero-meta {
+                gap: 10px 18px
+            }
+
+            .policy-area {
+                padding: 38px 0 65px
+            }
+
+            .policy-layout {
+                grid-template-columns: 1fr;
+                gap: 22px
+            }
+
+            .policy-nav {
+                position: relative;
+                top: auto;
+                padding: 18px
+            }
+
+            .policy-nav ol {
+                grid-template-columns: 1fr 1fr;
+                gap: 2px 8px
+            }
+
+            .policy-nav a {
+                font-size: 11px
+            }
+
+            .policy-section {
+                padding: 21px 19px;
+                margin-bottom: 13px
+            }
+
+            .policy-section h2 {
+                font-size: 18px
+            }
+
+            .section-number {
+                flex-basis: 34px;
+                width: 34px;
+                height: 34px
+            }
+
+            .policy-intro {
+                padding: 18px
+            }
+
+            .fg {
+                grid-template-columns: 1fr;
+                gap: 25px
+            }
+
+            .foot .logo {
+                width: 190px;
+                height: 76px
+            }
+        }
+
+        @media(max-width:420px) {
+            .policy-nav ol {
+                grid-template-columns: 1fr
+            }
+
+            .page-hero h1 {
+                font-size: 36px
+            }
+
+            .policy-section h2 {
+                font-size: 17px
+            }
+        }
+
+        @media(prefers-reduced-motion:reduce) {
+            html {
+                scroll-behavior: auto
+            }
+
+            *,
+            *:before,
+            *:after {
+                animation-duration: .01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: .01ms !important
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="nav">
+        <div class="wrap">
+            <a href="index.html" class="logo" aria-label="CallMetrics home"><img src="img/PNG.png"
+                    alt="CallMetrics"></a>
+            <nav class="menu" id="menu" aria-label="Main navigation">
+                <a href="https://login.callmetrics.tech" class="btn amber">Login</a>
+                <a href="https://login.callmetrics.tech" class="btn amber">Signup</a>
+                <a href="https://www.callmetrics.tech/#install" class="btn install-app-btn" id="installApp"
+                    aria-label="Install CallMetrics app">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <path d="m7 10 5 5 5-5" />
+                        <path d="M12 15V3" />
+                    </svg>
+                    <span>Install App</span>
+                </a>
+            </nav>
+            <button class="burger" id="burger" aria-label="Toggle navigation"
+                aria-expanded="false"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="wrap hero-inner">
+                <p class="eyebrow">CallMetrics · Legal</p>
+                <h1>Privacy <span>Policy</span></h1>
+                <p class="hero-intro">Your privacy matters. This policy explains how GRANDBIZ LEARNING SOLUTIONS LLP,
+                    operating under the CallMetrics brand, collects, uses, stores, discloses and protects information
+                    when you use our website, mobile application and services.</p>
+                <!-- <div class="hero-meta">
+                    <span><i></i> Effective Date: <b>12 November 2026</b></span>
+                    <span><i></i> Last Updated: <b>12 November 2026</b></span>
+                </div> -->
+            </div>
+        </section>
+
+        <section class="policy-area">
+            <div class="wrap policy-layout">
+                <aside class="policy-nav" aria-label="Privacy policy contents">
+                    <h2>On this page</h2>
+                    <ol>
+                        <li><a href="#section-1">01. Introduction</a></li>
+                        <li><a href="#section-2">02. Scope of This Policy</a></li>
+                        <li><a href="#section-3">03. Information We Collect</a></li>
+                        <li><a href="#section-4">04. Purposes of Processing</a></li>
+                        <li><a href="#section-5">05. Role of CallMetrics</a></li>
+                        <li><a href="#section-6">06. Employee Monitoring</a></li>
+                        <li><a href="#section-7">07. Call Recording</a></li>
+                        <li><a href="#section-8">08. Sharing Information</a></li>
+                        <li><a href="#section-9">09. Data Security</a></li>
+                        <li><a href="#section-10">10. Data Retention</a></li>
+                        <li><a href="#section-11">11. Security Incidents</a></li>
+                        <li><a href="#section-12">12. Privacy Rights</a></li>
+                        <li><a href="#section-13">13. Cookies</a></li>
+                        <li><a href="#section-14">14. Third-Party Services</a></li>
+                        <li><a href="#section-15">15. Children's Privacy</a></li>
+                        <li><a href="#section-16">16. Policy Changes</a></li>
+                        <li><a href="#section-17">17. Contact & Complaints</a></li>
+                    </ol>
+                </aside>
+
+                <div class="policy-content">
+                    <div class="policy-intro"><strong>CallMetrics – Operated by GRANDBIZ LEARNING SOLUTIONS
+                            LLP</strong><br>Website: <a href="https://www.callmetrics.tech" target="_blank"
+                            rel="noopener">https://www.callmetrics.tech</a></div>
+
+                    <article class="policy-section" id="section-1">
+                        <div class="section-heading"><span class="section-number">01</span>
+                            <h2>Introduction</h2>
+                        </div>
+                        <p>GRANDBIZ LEARNING SOLUTIONS LLP ("Company", "we", "our" or "us"), operating under the brand
+                            name CallMetrics, is committed to protecting the privacy and personal information of its
+                            customers, employees, authorised users and website visitors.</p>
+                        <p>CallMetrics is a business software platform providing call tracking, call analytics, employee
+                            activity monitoring, GPS-based location tracking, call recording management and reporting
+                            services.</p>
+                        <p>This Privacy Policy explains how we collect, use, store, disclose and protect information
+                            when you visit our website, register for an account, use our mobile application or access
+                            our services.</p>
+                        <p>By using CallMetrics, you acknowledge that you have read this Privacy Policy. Where consent
+                            is legally required, we will obtain the appropriate consent separately.</p>
+                    </article>
+
+                    <article class="policy-section" id="section-2">
+                        <div class="section-heading"><span class="section-number">02</span>
+                            <h2>Scope of This Policy</h2>
+                        </div>
+                        <p>This policy applies to:</p>
+                        <ul>
+                            <li>Website visitors.</li>
+                            <li>Registered customers.</li>
+                            <li>Business account administrators.</li>
+                            <li>Employees and agents using CallMetrics.</li>
+                            <li>Individuals whose information is processed through customer accounts.</li>
+                            <li>Individuals contacting our support team.</li>
+                        </ul>
+                    </article>
+
+                    <article class="policy-section" id="section-3">
+                        <div class="section-heading"><span class="section-number">03</span>
+                            <h2>Information We Collect</h2>
+                        </div>
+                        <p>Depending on the services enabled and permissions granted, we may collect the following
+                            information.</p>
+                        <h3>3.1 Account and Registration Information</h3>
+                        <ul>
+                            <li>Full name.</li>
+                            <li>Business or organisation name.</li>
+                            <li>Email address.</li>
+                            <li>Mobile number.</li>
+                            <li>Username and authentication information.</li>
+                            <li>Account registration details.</li>
+                            <li>Subscription and billing information.</li>
+                        </ul>
+                        <h3>3.2 Call and Telecommunication Information</h3>
+                        <p>Depending on supported device functionality and authorised integrations:</p>
+                        <ul>
+                            <li>Incoming and outgoing call records.</li>
+                            <li>Calling and receiving phone numbers.</li>
+                            <li>Call date and time.</li>
+                            <li>Call duration.</li>
+                            <li>Answered, missed and rejected call status.</li>
+                            <li>Available call activity information.</li>
+                            <li>Associated employee or agent details.</li>
+                        </ul>
+                        <h3>3.3 Call Recording Information</h3>
+                        <p>Where recording functionality is available and lawfully enabled:</p>
+                        <ul>
+                            <li>Audio recordings.</li>
+                            <li>Recording timestamps.</li>
+                            <li>Call duration.</li>
+                            <li>Associated call metadata.</li>
+                            <li>Recording access and download activity.</li>
+                        </ul>
+                        <p>CallMetrics does not authorise unlawful recording of private conversations. Customers are
+                            responsible for ensuring that required notices, permissions and legal requirements are
+                            fulfilled before enabling recording functionality.</p>
+                        <h3>3.4 Location Information</h3>
+                        <p>Where location functionality is enabled and the required permissions are granted:</p>
+                        <ul>
+                            <li>GPS coordinates.</li>
+                            <li>Current or last reported location.</li>
+                            <li>Location timestamps.</li>
+                            <li>Location history, where enabled.</li>
+                            <li>Associated employee identification.</li>
+                            <li>Location tracking status.</li>
+                        </ul>
+                        <p>Location information may be collected while the application is active or in the background,
+                            but only where the relevant functionality, device permissions and applicable legal
+                            requirements permit it.</p>
+                        <h3>3.5 Device and Technical Information</h3>
+                        <ul>
+                            <li>IP address.</li>
+                            <li>Device model.</li>
+                            <li>Operating system.</li>
+                            <li>Application version.</li>
+                            <li>Browser type.</li>
+                            <li>Login timestamps.</li>
+                            <li>Error reports.</li>
+                            <li>Security and audit logs.</li>
+                        </ul>
+                        <h3>3.6 Payment Information</h3>
+                        <p>We may receive:</p>
+                        <ul>
+                            <li>Payment transaction IDs.</li>
+                            <li>Subscription details.</li>
+                            <li>Payment status.</li>
+                            <li>Invoice details.</li>
+                            <li>Billing address and applicable tax information.</li>
+                        </ul>
+                        <p>Payment card and banking credentials are generally processed by the relevant payment service
+                            provider. We do not intentionally collect or store complete payment card credentials unless
+                            a specifically disclosed and compliant payment arrangement requires it.</p>
+                    </article>
+
+                    <article class="policy-section" id="section-4">
+                        <div class="section-heading"><span class="section-number">04</span>
+                            <h2>Purposes of Information Processing</h2>
+                        </div>
+                        <p>We process information for legitimate and disclosed business purposes, including:</p>
+                        <ul>
+                            <li>Creating and managing user accounts.</li>
+                            <li>Providing call tracking services.</li>
+                            <li>Displaying call history and call analytics.</li>
+                            <li>Calculating employee-wise performance metrics.</li>
+                            <li>Managing available call recordings.</li>
+                            <li>Providing authorised GPS tracking.</li>
+                            <li>Generating business reports.</li>
+                            <li>Managing subscriptions and payments.</li>
+                            <li>Providing technical support.</li>
+                            <li>Preventing fraud and unauthorised access.</li>
+                            <li>Maintaining platform security.</li>
+                            <li>Complying with applicable legal obligations.</li>
+                        </ul>
+                        <p>We will not use personal information for unrelated purposes without an appropriate legal
+                            basis and required notice or consent.</p>
+                    </article>
+
+                    <article class="policy-section" id="section-5">
+                        <div class="section-heading"><span class="section-number">05</span>
+                            <h2>Role of CallMetrics and Business Customers</h2>
+                        </div>
+                        <p>Depending on the information and purpose involved, GRANDBIZ LEARNING SOLUTIONS LLP may act in
+                            different capacities.</p>
+                        <h3>A. Independent processing</h3>
+                        <p>We determine the purposes and means of processing certain information relating to our own
+                            website visitors, account registrations, customer relationships, billing and platform
+                            security.</p>
+                        <h3>B. Processing on behalf of customers</h3>
+                        <p>Where business customers upload or manage employee information, call records, recordings or
+                            GPS information through CallMetrics, the customer generally determines the purpose and means
+                            of that processing.</p>
+                        <p>In such circumstances, the customer may act as the Data Fiduciary and CallMetrics may act as
+                            its Data Processor, subject to applicable law and the relevant customer agreement.</p>
+                        <p>Customers must ensure that they have the necessary authority, lawful basis, notices and
+                            permissions to provide such information to CallMetrics.</p>
+                    </article>
+
+                    <article class="policy-section" id="section-6">
+                        <div class="section-heading"><span class="section-number">06</span>
+                            <h2>Employee Monitoring and Location Tracking</h2>
+                        </div>
+                        <p>CallMetrics provides employee activity and GPS tracking features for legitimate business
+                            operations.</p>
+                        <p>Business customers must:</p>
+                        <ul>
+                            <li>Inform employees about monitoring activities.</li>
+                            <li>Explain the categories of information collected.</li>
+                            <li>Explain when location tracking is active.</li>
+                            <li>Obtain permissions and consent where legally required.</li>
+                            <li>Restrict monitoring to legitimate business purposes.</li>
+                            <li>Avoid unauthorised or excessive surveillance.</li>
+                            <li>Provide an appropriate contact for employee privacy requests.</li>
+                        </ul>
+                        <p>CallMetrics does not intend to facilitate covert surveillance or unlawful tracking.</p>
+                    </article>
+
+                    <article class="policy-section" id="section-7">
+                        <div class="section-heading"><span class="section-number">07</span>
+                            <h2>Call Recording and Audio Information</h2>
+                        </div>
+                        <p>Customers using call recording functionality are responsible for:</p>
+                        <ul>
+                            <li>Determining whether recording is legally permitted.</li>
+                            <li>Providing required notices to callers and employees.</li>
+                            <li>Obtaining necessary permissions or consent.</li>
+                            <li>Restricting access to authorised users.</li>
+                            <li>Using recordings for lawful business purposes.</li>
+                            <li>Managing retention and deletion settings.</li>
+                        </ul>
+                        <p>CallMetrics may provide recording retention and automatic deletion controls where technically
+                            supported.</p>
+                    </article>
+
+                    <article class="policy-section" id="section-8">
+                        <div class="section-heading"><span class="section-number">08</span>
+                            <h2>Sharing of Information</h2>
+                        </div>
+                        <p>We do not sell personal information as a business activity.</p>
+                        <p>Information may be disclosed to:</p>
+                        <ul>
+                            <li>Hosting and cloud infrastructure providers.</li>
+                            <li>Payment processing providers.</li>
+                            <li>Customer support and communication service providers.</li>
+                            <li>Security and fraud prevention providers.</li>
+                            <li>Authorised administrators of customer accounts.</li>
+                            <li>Professional advisers.</li>
+                            <li>Government authorities, courts or regulators where legally required.</li>
+                        </ul>
+                        <p>Service providers are permitted to process information only for authorised purposes and
+                            subject to appropriate contractual safeguards.</p>
+                    </article>
+
+                    <article class="policy-section" id="section-9">
+                        <div class="section-heading"><span class="section-number">09</span>
+                            <h2>Data Storage and Security</h2>
+                        </div>
+                        <p>We implement appropriate technical and organisational security measures designed to protect
+                            information.</p>
+                        <p>Depending on the service and infrastructure, these may include:</p>
+                        <ul>
+                            <li>Authentication and access controls.</li>
+                            <li>Role-based permissions.</li>
+                            <li>Encryption during transmission.</li>
+                            <li>Encryption at rest where implemented.</li>
+                            <li>Secure infrastructure configuration.</li>
+                            <li>Security monitoring.</li>
+                            <li>Audit logs.</li>
+                            <li>Backup and recovery procedures.</li>
+                            <li>Access restrictions for recordings and location information.</li>
+                        </ul>
+                        <p>No online service can guarantee absolute security.</p>
+                    </article>
+
+                    <article class="policy-section" id="section-10">
+                        <div class="section-heading"><span class="section-number">10</span>
+                            <h2>Data Retention</h2>
+                        </div>
+                        <p>We retain personal information only for as long as reasonably necessary for the disclosed
+                            purposes, applicable contractual requirements and legal obligations.</p>
+                        <p>Retention periods may differ by data category:</p>
+                        <ul>
+                            <li><strong>Account information:</strong> During the customer relationship and the necessary
+                                post-termination period.</li>
+                            <li><strong>Call records:</strong> According to customer configuration and applicable
+                                retention requirements.</li>
+                            <li><strong>Recordings:</strong> According to the selected retention setting and contractual
+                                arrangements.</li>
+                            <li><strong>GPS information:</strong> According to the enabled location history and
+                                retention configuration.</li>
+                            <li><strong>Billing records:</strong> As required by applicable accounting and tax laws.
+                            </li>
+                            <li><strong>Security logs:</strong> According to applicable security and legal retention
+                                requirements.</li>
+                        </ul>
+                        <p>When information is no longer required, it will be deleted, anonymised or otherwise disposed
+                            of through appropriate procedures, subject to lawful retention requirements and backup
+                            cycles.</p>
+                    </article>
+
+                    <article class="policy-section" id="section-11">
+                        <div class="section-heading"><span class="section-number">11</span>
+                            <h2>Data Security Incidents</h2>
+                        </div>
+                        <p>We maintain procedures for identifying, assessing and responding to security incidents.</p>
+                        <p>Where applicable, we will notify affected customers, individuals and competent authorities in
+                            accordance with applicable legal requirements.</p>
+                    </article>
+
+                    <article class="policy-section" id="section-12">
+                        <div class="section-heading"><span class="section-number">12</span>
+                            <h2>Individual Privacy Rights</h2>
+                        </div>
+                        <p>Subject to applicable law and the commencement of relevant statutory provisions, individuals
+                            may have rights to:</p>
+                        <ul>
+                            <li>Obtain information about personal data processing.</li>
+                            <li>Request correction of inaccurate personal information.</li>
+                            <li>Request completion or updating of information.</li>
+                            <li>Request deletion where legally applicable.</li>
+                            <li>Withdraw consent where processing relies on consent.</li>
+                            <li>Raise privacy complaints.</li>
+                            <li>Nominate another person where permitted by law.</li>
+                        </ul>
+                        <p>Requests can be submitted through the privacy contact details below.</p>
+                    </article>
+
+                    <article class="policy-section" id="section-13">
+                        <div class="section-heading"><span class="section-number">13</span>
+                            <h2>Cookies and Website Technologies</h2>
+                        </div>
+                        <p>Our website may use cookies and similar technologies for:</p>
+                        <ul>
+                            <li>Website functionality.</li>
+                            <li>Session management.</li>
+                            <li>Website security.</li>
+                            <li>User preferences.</li>
+                            <li>Analytics, where enabled.</li>
+                        </ul>
+                        <p>Users may manage cookies through available website controls and browser settings.</p>
+                    </article>
+
+                    <article class="policy-section" id="section-14">
+                        <div class="section-heading"><span class="section-number">14</span>
+                            <h2>Third-Party Services</h2>
+                        </div>
+                        <p>Our platform may use third-party software, cloud infrastructure, payment gateways and
+                            integrations.</p>
+                        <p>Their processing activities may be governed by their respective privacy policies and
+                            contractual arrangements.</p>
+                        <p>We do not control independent third-party services outside our reasonable control.</p>
+                    </article>
+
+                    <article class="policy-section" id="section-15">
+                        <div class="section-heading"><span class="section-number">15</span>
+                            <h2>Children's Privacy</h2>
+                        </div>
+                        <p>CallMetrics is intended for business users and is not designed for use by children.</p>
+                        <p>We do not knowingly seek to collect children's personal information without legally required
+                            authorisation.</p>
+                    </article>
+
+                    <article class="policy-section" id="section-16">
+                        <div class="section-heading"><span class="section-number">16</span>
+                            <h2>Changes to This Policy</h2>
+                        </div>
+                        <p>We may revise this policy to reflect changes in services, technology, business practices or
+                            applicable law.</p>
+                        <p>The revised policy will be published on our website with an updated effective date.</p>
+                    </article>
+
+                    <article class="policy-section" id="section-17">
+                        <div class="section-heading"><span class="section-number">17</span>
+                            <h2>Contact and Privacy Complaints</h2>
+                        </div>
+                        <div class="contact-details">
+                            <p><strong>Legal Entity:</strong> GRANDBIZ LEARNING SOLUTIONS LLP</p>
+                            <p><strong>Brand:</strong> CallMetrics</p>
+                            <p><strong>Website:</strong> <a href="https://www.callmetrics.tech" target="_blank"
+                                    rel="noopener">https://www.callmetrics.tech</a></p>
+                            <p><strong>Support Email:</strong> <a
+                                    href="mailto:Support@callmetrics.org">Support@callmetrics.org</a></p>
+                            <p><strong>Registered Office:</strong> 212-213, 2nd Floor, Paradise Tower, Gokhale Rd, next
+                                to Mc.Donald, Naupada, Thane West, Thane, Maharashtra 400602</p>
+                        </div>
+                        <p>Please include your registered account email address and sufficient details to identify your
+                            privacy request.</p>
+                        <p>We will acknowledge and address complaints in accordance with applicable law and our
+                            published grievance procedure.</p>
+                    </article>
+
+                    <div class="policy-end">
+                        <p>For privacy-related questions or complaints, please contact <a
+                                href="mailto:Support@callmetrics.org">Support@callmetrics.org</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="foot">
+        <div class="wrap fg">
+            <div>
+                <a href="index.html" class="logo" aria-label="CallMetrics home"><img src="img/White Logo.png"
+                        alt="CallMetrics"></a>
+                <p>Call tracking and team analytics for teams that work on the phone.</p>
+            </div>
+            <div>
+                <h4>Contact Us</h4>
+                <div class="contact-links">
+                    <a href="mailto:support@callmetrics.org">support@callmetrics.org</a>
+                    <a href="tel:+919987653456">+91 99876 53456</a>
+                </div>
+            </div>
+        </div>
+        <div class="wrap fb">© <span id="yr"></span> Callmetrics. All rights reserved.</div>
+    </footer>
+    <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+    <script>
+        (function () {
+            const burger = document.getElementById('burger');
+            const menu = document.getElementById('menu');
+            if (burger && menu) {
+                burger.addEventListener('click', () => {
+                    const open = menu.classList.toggle('open');
+                    burger.setAttribute('aria-expanded', String(open));
+                    burger.setAttribute('aria-label', open ? 'Close navigation' : 'Toggle navigation');
+                });
+                menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+                    menu.classList.remove('open');
+                    burger.setAttribute('aria-expanded', 'false');
+                }));
+            }
+            const year = document.getElementById('yr');
+            if (year) year.textContent = new Date().getFullYear();
+            const backTop = document.getElementById('backTop');
+            window.addEventListener('scroll', () => { if (backTop) backTop.classList.toggle('show', window.scrollY > 450) });
+            if (backTop) backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+            const links = [...document.querySelectorAll('.policy-nav a')];
+            const sections = links.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id));
+                        }
+                    });
+                }, { rootMargin: '-18% 0px -70% 0px' });
+                sections.forEach(section => observer.observe(section));
+            }
+        })();
+    </script>
+</body>
+
+</html>

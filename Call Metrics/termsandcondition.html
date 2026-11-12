@@ -1,0 +1,1682 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Terms and Conditions | CallMetrics</title>
+
+    <meta name="description"
+        content="Read the CallMetrics Terms and Conditions governing subscriptions, payments, call tracking, employee monitoring, data protection and platform usage.">
+
+    <meta name="theme-color" content="#050505">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --ink: #171717;
+            --navy: #050505;
+            --muted: #666;
+            --line: #e9e9e9;
+            --paper: #f7f7f7;
+            --white: #fff;
+            --accent: #d71920;
+            --accent-dark: #b51219;
+            --soft: #fce7e8;
+            --container: 1200px;
+            --radius: 18px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 110px;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: var(--ink);
+            background: var(--paper);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: min(var(--container), calc(100% - 48px));
+            margin: auto;
+        }
+
+        /* HEADER */
+
+        .site-header {
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.97);
+            border-bottom: 1px solid var(--line);
+            backdrop-filter: blur(14px);
+        }
+
+        .header-inner {
+            min-height: 82px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+        }
+
+        .logo img {
+            width: 165px;
+            height: auto;
+            display: block;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .header-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 11px 20px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 700;
+            transition: 0.25s ease;
+        }
+
+        .login-btn {
+            color: var(--ink);
+            border: 1px solid var(--line);
+        }
+
+        .login-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .signup-btn {
+            color: var(--white);
+            background: var(--accent);
+        }
+
+        .signup-btn:hover {
+            background: var(--accent-dark);
+            transform: translateY(-2px);
+        }
+
+        .install-btn {
+            color: var(--white);
+            background: #050505;
+        }
+
+        .install-btn:hover {
+            background: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .menu-toggle {
+            display: none;
+            border: 0;
+            background: transparent;
+            font-size: 27px;
+            cursor: pointer;
+            color: var(--ink);
+        }
+
+        /* HERO */
+
+        .hero {
+            position: relative;
+            overflow: hidden;
+            padding: 95px 0 100px;
+            color: var(--white);
+            background:
+                radial-gradient(circle at 85% 30%, rgba(215, 25, 32, 0.25), transparent 32%),
+                linear-gradient(125deg, #050505 0%, #111 55%, #050505 100%);
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            width: 450px;
+            height: 450px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 50%;
+            right: -100px;
+            top: -190px;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            width: 330px;
+            height: 330px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            right: -40px;
+            top: -130px;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+
+        .hero-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: #f3b5b7;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 22px;
+        }
+
+        .hero-eyebrow::before {
+            content: "";
+            width: 28px;
+            height: 2px;
+            background: var(--accent);
+        }
+
+        .hero h1 {
+            font-family: 'Manrope', sans-serif;
+            font-size: clamp(38px, 5.5vw, 66px);
+            line-height: 1.12;
+            letter-spacing: -2px;
+            font-weight: 800;
+            margin-bottom: 24px;
+        }
+
+        .hero h1 span {
+            color: var(--accent);
+        }
+
+        .hero-description {
+            max-width: 650px;
+            color: #c5c5c5;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .hero-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 28px;
+            color: #aaa;
+            font-size: 13px;
+        }
+
+        .hero-meta strong {
+            color: #fff;
+            font-weight: 600;
+        }
+
+        /* MAIN CONTENT */
+
+        .legal-section {
+            padding: 75px 0 100px;
+        }
+
+        .legal-layout {
+            display: grid;
+            grid-template-columns: 285px minmax(0, 1fr);
+            align-items: start;
+            gap: 35px;
+        }
+
+        /* TABLE OF CONTENTS */
+
+        .toc-wrapper {
+            position: sticky;
+            top: 110px;
+        }
+
+        .toc-card {
+            background: var(--white);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            padding: 27px 23px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.035);
+        }
+
+        .toc-title {
+            font-family: 'Manrope', sans-serif;
+            font-size: 15px;
+            font-weight: 800;
+            margin-bottom: 19px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .toc-title::before {
+            content: "";
+            width: 4px;
+            height: 19px;
+            border-radius: 5px;
+            background: var(--accent);
+        }
+
+        .toc-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .toc-list a {
+            display: flex;
+            align-items: flex-start;
+            gap: 11px;
+            padding: 9px 10px;
+            border-radius: 7px;
+            color: #666;
+            font-size: 12px;
+            line-height: 1.5;
+            transition: 0.2s ease;
+        }
+
+        .toc-list a span {
+            min-width: 20px;
+            color: #aaa;
+            font-weight: 700;
+        }
+
+        .toc-list a:hover,
+        .toc-list a.active {
+            color: var(--accent);
+            background: var(--soft);
+        }
+
+        .toc-list a.active span {
+            color: var(--accent);
+        }
+
+        /* CONTENT */
+
+        .legal-content {
+            min-width: 0;
+        }
+
+        .intro-card {
+            background: var(--white);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            padding: 32px;
+            margin-bottom: 22px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.025);
+        }
+
+        .intro-card p {
+            font-size: 15px;
+            color: #555;
+            line-height: 1.85;
+        }
+
+        .intro-card p + p {
+            margin-top: 12px;
+        }
+
+        .legal-card {
+            background: var(--white);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            padding: 30px 32px;
+            margin-bottom: 18px;
+            scroll-margin-top: 110px;
+            transition: border-color 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .legal-card:hover {
+            border-color: #f0c3c5;
+            box-shadow: 0 10px 32px rgba(0, 0, 0, 0.035);
+        }
+
+        .section-heading {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 18px;
+        }
+
+        .section-number {
+            flex-shrink: 0;
+            width: 39px;
+            height: 39px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            background: var(--soft);
+            color: var(--accent);
+            font-family: 'Manrope', sans-serif;
+            font-size: 13px;
+            font-weight: 800;
+        }
+
+        .section-heading h2 {
+            font-family: 'Manrope', sans-serif;
+            font-size: 20px;
+            line-height: 1.4;
+            font-weight: 800;
+            padding-top: 5px;
+            color: var(--ink);
+        }
+
+        .legal-card p {
+            color: #555;
+            font-size: 14px;
+            line-height: 1.85;
+            margin-bottom: 13px;
+        }
+
+        .legal-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .legal-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 12px 0 15px;
+        }
+
+        .legal-card ul li {
+            position: relative;
+            padding-left: 22px;
+            margin-bottom: 9px;
+            color: #555;
+            font-size: 14px;
+            line-height: 1.75;
+        }
+
+        .legal-card ul li::before {
+            content: "";
+            position: absolute;
+            left: 2px;
+            top: 11px;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+
+        .legal-card a {
+            color: var(--accent);
+            font-weight: 600;
+            overflow-wrap: anywhere;
+        }
+
+        .legal-card a:hover {
+            color: var(--accent-dark);
+            text-decoration: underline;
+        }
+
+        
+/* FOOTER */
+
+.foot {
+    background: #050505;
+    color: #fff;
+    padding: 55px 0 0;
+}
+
+.foot .wrap {
+    width: min(1200px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+.fg {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 70px;
+    padding-bottom: 40px;
+    align-items: start;
+}
+
+.foot-brand {
+    max-width: 430px;
+}
+
+.foot-logo {
+    display: inline-block;
+    margin-bottom: 18px;
+}
+
+.foot-logo img {
+    display: block;
+    width: 185px;
+    height: auto;
+    max-height: 75px;
+    object-fit: contain;
+    object-position: left center;
+}
+
+.foot-description {
+    max-width: 360px;
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.foot-contact h4 {
+    margin: 8px 0 20px;
+    color: #f0444b;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 13px;
+}
+
+.contact-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 11px;
+    color: #c9c9c9;
+    font-size: 14px;
+    transition: color 0.25s ease;
+}
+
+.contact-links a:hover {
+    color: #fff;
+}
+
+.contact-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #f0444b;
+    font-size: 14px;
+}
+
+.fb {
+    border-top: 1px solid #ffffff20;
+    padding: 19px 0 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    color: #888;
+    font-size: 12px;
+}
+
+.fb-links {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.fb-links a {
+    color: #aaa;
+    font-size: 12px;
+    transition: color 0.2s ease;
+}
+
+.fb-links a:hover {
+    color: #fff;
+}
+
+@media (max-width: 700px) {
+    .foot {
+        padding-top: 42px;
+    }
+
+    .foot .wrap {
+        width: min(100% - 36px, 1200px);
+    }
+
+    .fg {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding-bottom: 32px;
+    }
+
+    .foot-logo img {
+        width: 165px;
+    }
+
+    .fb {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .fb-links {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+}
+
+
+        /* BACK TO TOP */
+
+        .back-to-top {
+            position: fixed;
+            right: 25px;
+            bottom: 25px;
+            width: 45px;
+            height: 45px;
+            border: none;
+            border-radius: 10px;
+            background: var(--accent);
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: 0.25s ease;
+            z-index: 999;
+            box-shadow: 0 5px 20px rgba(215, 25, 32, 0.25);
+        }
+
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .back-to-top:hover {
+            background: var(--accent-dark);
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 900px) {
+            .legal-layout {
+                grid-template-columns: 235px minmax(0, 1fr);
+                gap: 22px;
+            }
+
+            .toc-card {
+                padding: 22px 16px;
+            }
+
+            .legal-card,
+            .intro-card {
+                padding: 25px;
+            }
+
+            .header-inner {
+                min-height: 75px;
+            }
+
+            .logo img {
+                width: 145px;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .container {
+                width: min(100% - 32px, var(--container));
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .header-actions {
+                display: none;
+                position: absolute;
+                top: 75px;
+                left: 0;
+                width: 100%;
+                padding: 20px 24px;
+                background: #fff;
+                border-bottom: 1px solid var(--line);
+                flex-direction: column;
+                align-items: stretch;
+                gap: 10px;
+            }
+
+            .header-actions.open {
+                display: flex;
+            }
+
+            .header-btn {
+                width: 100%;
+            }
+
+            .hero {
+                padding: 70px 0 75px;
+            }
+
+            .hero h1 {
+                letter-spacing: -1px;
+            }
+
+            .hero-description {
+                font-size: 14px;
+            }
+
+            .legal-section {
+                padding: 45px 0 65px;
+            }
+
+            .legal-layout {
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+            }
+
+            .toc-wrapper {
+                position: relative;
+                top: auto;
+                width: 100%;
+            }
+
+            .toc-card {
+                padding: 20px;
+            }
+
+            .toc-list {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 4px;
+            }
+
+            .toc-list a {
+                font-size: 11px;
+                padding: 8px;
+            }
+
+            .legal-content {
+                width: 100%;
+            }
+
+            .intro-card,
+            .legal-card {
+                padding: 23px 20px;
+            }
+
+            .section-heading h2 {
+                font-size: 18px;
+            }
+
+            .footer-main {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero-meta {
+                gap: 10px 18px;
+                flex-direction: column;
+            }
+
+            .toc-list {
+                grid-template-columns: 1fr;
+            }
+
+            .section-heading {
+                gap: 12px;
+            }
+
+            .section-number {
+                width: 34px;
+                height: 34px;
+            }
+
+            .section-heading h2 {
+                font-size: 17px;
+            }
+
+            .legal-card p,
+            .legal-card ul li {
+                font-size: 13px;
+            }
+
+            .footer-links {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <a href="https://www.callmetrics.tech/" class="logo">
+                <img src="img/PNG.png" alt="CallMetrics Logo">
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav class="header-actions" id="headerActions">
+                <a href="https://login.callmetrics.tech" class="header-btn login-btn">
+                    Login
+                </a>
+
+                <a href="https://login.callmetrics.tech" class="header-btn signup-btn">
+                    Sign Up
+                </a>
+
+                <a href="https://www.callmetrics.tech/#install"
+                    class="header-btn install-btn">
+                    Install App
+                </a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+
+            <div class="hero-content">
+
+                <div class="hero-eyebrow">
+                    CallMetrics · Legal
+                </div>
+
+                <h1>
+                    Terms and <span>Conditions</span>
+                </h1>
+
+                <p class="hero-description">
+                    Please read these Terms and Conditions carefully before
+                    accessing or using the CallMetrics platform and services.
+                </p>
+
+                <div class="hero-meta">
+                    <div>
+                        <strong>Effective Date:</strong> 12 November 2026
+                    </div>
+
+                    <div>
+                        <strong>Last Updated:</strong> 12 November 2026
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="legal-section">
+        <div class="container">
+
+            <div class="legal-layout">
+
+                <!-- TABLE OF CONTENTS -->
+                <aside class="toc-wrapper">
+                    <div class="toc-card">
+
+                        <div class="toc-title">
+                            Table of Contents
+                        </div>
+
+                        <ul class="toc-list" id="tocList">
+                            <li><a href="#section-1"><span>01</span> Introduction and Acceptance</a></li>
+                            <li><a href="#section-2"><span>02</span> Description of Services</a></li>
+                            <li><a href="#section-3"><span>03</span> Eligibility and Account Registration</a></li>
+                            <li><a href="#section-4"><span>04</span> Subscription Plans and Charges</a></li>
+                            <li><a href="#section-5"><span>05</span> Payments and Taxes</a></li>
+                            <li><a href="#section-6"><span>06</span> Subscription Renewal and Cancellation</a></li>
+                            <li><a href="#section-7"><span>07</span> Customer Responsibilities</a></li>
+                            <li><a href="#section-8"><span>08</span> GPS and Employee Monitoring</a></li>
+                            <li><a href="#section-9"><span>09</span> Call Recording and Telecommunication Data</a></li>
+                            <li><a href="#section-10"><span>10</span> Customer Data and Intellectual Property</a></li>
+                            <li><a href="#section-11"><span>11</span> Data Protection</a></li>
+                            <li><a href="#section-12"><span>12</span> Acceptable Use Restrictions</a></li>
+                            <li><a href="#section-13"><span>13</span> Service Availability and Maintenance</a></li>
+                            <li><a href="#section-14"><span>14</span> Data Backup and Customer Exports</a></li>
+                            <li><a href="#section-15"><span>15</span> Account Suspension and Termination</a></li>
+                            <li><a href="#section-16"><span>16</span> Disclaimers</a></li>
+                            <li><a href="#section-17"><span>17</span> Limitation of Liability</a></li>
+                            <li><a href="#section-18"><span>18</span> Indemnification</a></li>
+                            <li><a href="#section-19"><span>19</span> Amendments</a></li>
+                            <li><a href="#section-20"><span>20</span> Governing Law and Jurisdiction</a></li>
+                            <li><a href="#section-21"><span>21</span> Contact Details</a></li>
+                        </ul>
+
+                    </div>
+                </aside>
+
+                <!-- TERMS CONTENT -->
+                <div class="legal-content">
+
+                    <!-- INTRODUCTION -->
+                    <div class="intro-card">
+                        <p>
+                            These Terms and Conditions govern access to and use
+                            of CallMetrics, a business call tracking and
+                            analytics platform operated by GRANDBIZ LEARNING
+                            SOLUTIONS LLP.
+                        </p>
+
+                        <p>
+                            By registering, accessing, purchasing or using
+                            CallMetrics, you agree to these Terms. If you do
+                            not agree, you must discontinue using the services.
+                        </p>
+                    </div>
+
+                    <!-- SECTION 1 -->
+                    <section class="legal-card" id="section-1">
+                        <div class="section-heading">
+                            <div class="section-number">01</div>
+                            <h2>Introduction and Acceptance</h2>
+                        </div>
+
+                        <p>
+                            These Terms and Conditions ("Terms") govern access
+                            to and use of CallMetrics, a business call tracking
+                            and analytics platform operated by GRANDBIZ
+                            LEARNING SOLUTIONS LLP ("Company", "we", "our" or
+                            "us").
+                        </p>
+
+                        <p>
+                            By registering, accessing, purchasing or using
+                            CallMetrics, you agree to these Terms.
+                        </p>
+
+                        <p>
+                            If you do not agree, you must discontinue using
+                            the services.
+                        </p>
+                    </section>
+
+                    <!-- SECTION 2 -->
+                    <section class="legal-card" id="section-2">
+                        <div class="section-heading">
+                            <div class="section-number">02</div>
+                            <h2>Description of Services</h2>
+                        </div>
+
+                        <p>
+                            CallMetrics provides software solutions that may
+                            include:
+                        </p>
+
+                        <ul>
+                            <li>Incoming and outgoing call tracking.</li>
+                            <li>Call history and duration analytics.</li>
+                            <li>Employee-wise call reports.</li>
+                            <li>Missed and rejected call reports.</li>
+                            <li>Call recording management.</li>
+                            <li>GPS-based employee location tracking.</li>
+                            <li>Live agent presence.</li>
+                            <li>Team and agent management.</li>
+                            <li>Business dashboards.</li>
+                            <li>Data import and backup.</li>
+                            <li>Subscription and billing management.</li>
+                        </ul>
+
+                        <p>
+                            Features depend on the selected plan, technical
+                            availability, device permissions, operating system
+                            restrictions and supported integrations.
+                        </p>
+
+                        <p>
+                            We do not guarantee that every mobile device or
+                            operating system supports every feature.
+                        </p>
+                    </section>
+
+                    <!-- SECTION 3 -->
+                    <section class="legal-card" id="section-3">
+                        <div class="section-heading">
+                            <div class="section-number">03</div>
+                            <h2>Eligibility and Account Registration</h2>
+                        </div>
+
+                        <p>
+                            Customers must provide accurate and complete
+                            registration information.
+                        </p>
+
+                        <p>
+                            The person registering an organisation's account
+                            represents that they have authority to act on
+                            behalf of that organisation.
+                        </p>
+
+                        <p>Users must:</p>
+
+                        <ul>
+                            <li>Maintain accurate account details.</li>
+                            <li>Protect login credentials.</li>
+                            <li>Restrict access to authorised individuals.</li>
+                            <li>Notify us of suspected account compromise.</li>
+                            <li>Follow applicable laws and these Terms.</li>
+                        </ul>
+                    </section>
+
+                    <!-- SECTION 4 -->
+                    <section class="legal-card" id="section-4">
+                        <div class="section-heading">
+                            <div class="section-number">04</div>
+                            <h2>Subscription Plans and Charges</h2>
+                        </div>
+
+                        <p>
+                            CallMetrics may offer different subscription plans.
+                        </p>
+
+                        <p>Each plan may specify:</p>
+
+                        <ul>
+                            <li>Subscription duration.</li>
+                            <li>Number of permitted agents.</li>
+                            <li>Available features.</li>
+                            <li>Storage allowances.</li>
+                            <li>Recording limits.</li>
+                            <li>Usage restrictions.</li>
+                            <li>Subscription price.</li>
+                            <li>Applicable taxes.</li>
+                        </ul>
+
+                        <p>
+                            The applicable price and billing conditions will
+                            be displayed before payment.
+                        </p>
+
+                        <p>
+                            The Company may revise future subscription pricing
+                            by providing appropriate notice. Existing paid
+                            subscription periods will remain subject to the
+                            price already agreed, unless otherwise lawfully
+                            agreed.
+                        </p>
+                    </section>
+
+                    <!-- SECTION 5 -->
+                    <section class="legal-card" id="section-5">
+                        <div class="section-heading">
+                            <div class="section-number">05</div>
+                            <h2>Payments and Taxes</h2>
+                        </div>
+
+                        <p>
+                            Customers must pay subscription charges using
+                            supported payment methods.
+                        </p>
+
+                        <p>
+                            Applicable GST and other statutory charges may be
+                            added as required by law.
+                        </p>
+
+                        <p>
+                            Payment confirmation, invoices and transaction
+                            records may be provided electronically.
+                        </p>
+
+                        <p>
+                            Where payments are handled by third-party payment
+                            providers, their payment processing terms may also
+                            apply.
+                        </p>
+                    </section>
+
+                    <!-- SECTION 6 -->
+                    <section class="legal-card" id="section-6">
+                        <div class="section-heading">
+                            <div class="section-number">06</div>
+                            <h2>Subscription Renewal and Cancellation</h2>
+                        </div>
+
+                        <p>
+                            Subscriptions may be offered on fixed or recurring
+                            billing terms.
+                        </p>
+
+                        <p>Where automatic renewal is offered:</p>
+
+                        <ul>
+                            <li>
+                                The renewal amount and frequency must be
+                                disclosed before authorisation.
+                            </li>
+                            <li>
+                                The customer must provide the required payment
+                                authorisation.
+                            </li>
+                            <li>
+                                Customers may cancel renewal through the
+                                available account or payment management
+                                process.
+                            </li>
+                            <li>
+                                Cancellation will prevent future renewal charges
+                                after successful processing.
+                            </li>
+                        </ul>
+
+                        <p>
+                            Cancellation does not automatically entitle a
+                            customer to a refund for an already commenced
+                            billing period, except where required by law or
+                            provided under our Refund Policy.
+                        </p>
+                    </section>
+
+                    <!-- SECTION 7 -->
+                    <section class="legal-card" id="section-7">
+                        <div class="section-heading">
+                            <div class="section-number">07</div>
+                            <h2>Customer Responsibilities</h2>
+                        </div>
+
+                        <p>Customers are responsible for:</p>
+
+                        <ul>
+                            <li>Using CallMetrics only for lawful business purposes.</li>
+                            <li>Providing accurate employee and business information.</li>
+                            <li>Obtaining necessary authority to use employee information.</li>
+                            <li>Informing employees about monitoring.</li>
+                            <li>Obtaining required recording and location permissions.</li>
+                            <li>Ensuring that the use of call data complies with applicable telecom and privacy laws.</li>
+                            <li>Restricting account access to authorised users.</li>
+                            <li>Maintaining suitable device and internet security.</li>
+                        </ul>
+                    </section>
+
+                    <!-- SECTION 8 -->
+                    <section class="legal-card" id="section-8">
+                        <div class="section-heading">
+                            <div class="section-number">08</div>
+                            <h2>GPS and Employee Monitoring</h2>
+                        </div>
+
+                        <p>
+                            CallMetrics may provide GPS-based monitoring
+                            functionality.
+                        </p>
+
+                        <p>Customers must:</p>
+
+                        <ul>
+                            <li>Inform employees before enabling tracking.</li>
+                            <li>Explain the purpose and scope of location collection.</li>
+                            <li>Obtain required permissions and consent.</li>
+                            <li>Use location data only for legitimate business purposes.</li>
+                            <li>Avoid tracking outside the authorised scope.</li>
+                            <li>Ensure access is restricted to appropriate managers.</li>
+                        </ul>
+
+                        <p>
+                            Customers must not use the platform for stalking,
+                            harassment, unlawful surveillance or other
+                            prohibited activities.
+                        </p>
+                    </section>
+
+                    <!-- SECTION 9 -->
+                    <section class="legal-card" id="section-9">
+                        <div class="section-heading">
+                            <div class="section-number">09</div>
+                            <h2>Call Recording and Telecommunication Data</h2>
+                        </div>
+
+                        <p>
+                            Where available, CallMetrics may process call
+                            records and audio recordings.
+                        </p>
+
+                        <p>
+                            Customers are solely responsible for determining
+                            whether their intended recording and monitoring
+                            practices are lawful.
+                        </p>
+
+                        <p>
+                            Customers must provide appropriate notifications
+                            and obtain necessary permissions or consent from
+                            employees, callers and other relevant individuals.
+                        </p>
+
+                        <p>
+                            CallMetrics does not guarantee that all Android
+                            devices, telecom networks or operating systems
+                            support automatic call recording or call-log
+                            collection.
+                        </p>
+                    </section>
+
+                    <!-- SECTION 10 -->
+                    <section class="legal-card" id="section-10">
+                        <div class="section-heading">
+                            <div class="section-number">10</div>
+                            <h2>Customer Data and Intellectual Property</h2>
+                        </div>
+
+                        <p>
+                            Customers retain their rights in information and
+                            content submitted through their accounts, subject
+                            to third-party rights and applicable law.
+                        </p>
+
+                        <p>
+                            Customers grant the Company a limited,
+                            non-exclusive right to host, process, transmit and
+                            display customer data only as necessary to provide,
+                            maintain, secure and support the services.
+                        </p>
+
+                        <p>
+                            The CallMetrics name, logo, platform design,
+                            software, website content and proprietary
+                            technology remain the intellectual property of
+                            their respective owners.
+                        </p>
+
+                        <p>
+                            Customers may not copy, distribute, reverse
+                            engineer or commercially exploit proprietary
+                            platform materials except where permitted by law
+                            or expressly authorised in writing.
+                        </p>
+                    </section>
+
+                    <!-- SECTION 11 -->
+                    <section class="legal-card" id="section-11">
+                        <div class="section-heading">
+                            <div class="section-number">11</div>
+                            <h2>Data Protection</h2>
+                        </div>
+
+                        <p>
+                            Both the Company and the customer agree to comply
+                            with applicable data protection and privacy laws.
+                        </p>
+
+                        <p>
+                            Where the Company processes personal data on behalf
+                            of a customer, the parties' responsibilities will
+                            be governed by the applicable Data Processing
+                            Agreement.
+                        </p>
+
+                        <p>
+                            Customers must not upload or process personal
+                            information unless they have the necessary
+                            authority and lawful basis.
+                        </p>
+                    </section>
+
+                    <!-- SECTION 12 -->
+                    <section class="legal-card" id="section-12">
+                        <div class="section-heading">
+                            <div class="section-number">12</div>
+                            <h2>Acceptable Use Restrictions</h2>
+                        </div>
+
+                        <p>Users must not:</p>
+
+                        <ul>
+                            <li>Conduct unlawful employee surveillance.</li>
+                            <li>Record conversations unlawfully.</li>
+                            <li>Use GPS tracking for stalking or harassment.</li>
+                            <li>Access another user's account without permission.</li>
+                            <li>Interfere with platform security.</li>
+                            <li>Upload malicious files or software.</li>
+                            <li>Attempt unauthorised access to servers or databases.</li>
+                            <li>Use the services for fraudulent or deceptive activities.</li>
+                            <li>Violate applicable intellectual property or privacy rights.</li>
+                        </ul>
+                    </section>
+
+                    <!-- SECTION 13 -->
+                    <section class="legal-card" id="section-13">
+                        <div class="section-heading">
+                            <div class="section-number">13</div>
+                            <h2>Service Availability and Maintenance</h2>
+                        </div>
+
+                        <p>
+                            We aim to maintain reliable service availability
+                            but do not guarantee uninterrupted operation.
+                        </p>
+
+                        <p>
+                            Services may be temporarily affected by:
+                        </p>
+
+                        <ul>
+                            <li>Scheduled maintenance.</li>
+                            <li>Technical issues.</li>
+                            <li>Server or infrastructure failures.</li>
+                            <li>Telecom network disruptions.</li>
+                            <li>Mobile operating system updates.</li>
+                            <li>Third-party integrations.</li>
+                            <li>Events beyond our reasonable control.</li>
+                        </ul>
+
+                        <p>
+                            We will make reasonable efforts to restore affected
+                            services.
+                        </p>
+                    </section>
+
+                    <!-- SECTION 14 -->
+                    <section class="legal-card" id="section-14">
+                        <div class="section-heading">
+                            <div class="section-number">14</div>
+                            <h2>Data Backup and Customer Exports</h2>
+                        </div>
+
+                        <p>
+                            We may provide backup and export functionality
+                            depending on the subscription plan.
+                        </p>
+
+                        <p>
+                            Customers are responsible for maintaining
+                            appropriate copies of important business
+                            information and verifying the availability of
+                            their exports.
+                        </p>
+
+                        <p>
+                            The availability of backup functionality does not
+                            guarantee recovery of every item of data in every
+                            circumstance.
+                        </p>
+                    </section>
+
+                    <!-- SECTION 15 -->
+                    <section class="legal-card" id="section-15">
+                        <div class="section-heading">
+                            <div class="section-number">15</div>
+                            <h2>Account Suspension and Termination</h2>
+                        </div>
+
+                        <p>We may suspend or restrict access where:</p>
+
+                        <ul>
+                            <li>A customer materially violates these Terms.</li>
+                            <li>Payments remain overdue after applicable notice.</li>
+                            <li>The account is used for unlawful activities.</li>
+                            <li>Platform security is threatened.</li>
+                            <li>A competent authority requires suspension.</li>
+                            <li>Continued service would violate applicable law.</li>
+                        </ul>
+
+                        <p>
+                            Where appropriate and legally permissible, we will
+                            notify the customer and provide an opportunity to
+                            address the issue.
+                        </p>
+
+                        <p>
+                            Customers may request account closure through the
+                            prescribed process.
+                        </p>
+                    </section>
+
+                    <!-- SECTION 16 -->
+                    <section class="legal-card" id="section-16">
+                        <div class="section-heading">
+                            <div class="section-number">16</div>
+                            <h2>Disclaimers</h2>
+                        </div>
+
+                        <p>
+                            CallMetrics is a business software and analytics
+                            platform.
+                        </p>
+
+                        <p>
+                            Reports, call statistics and employee activity
+                            information are generated from available data and
+                            technical integrations.
+                        </p>
+
+                        <p>
+                            The Company does not guarantee that all reports
+                            will be complete or error-free where data is
+                            unavailable, restricted or inaccurate at the
+                            source.
+                        </p>
+
+                        <p>
+                            CallMetrics is not a substitute for independent
+                            legal advice, employment compliance advice or
+                            telecommunications compliance advice.
+                        </p>
+                    </section>
+
+                    <!-- SECTION 17 -->
+                    <section class="legal-card" id="section-17">
+                        <div class="section-heading">
+                            <div class="section-number">17</div>
+                            <h2>Limitation of Liability</h2>
+                        </div>
+
+                        <p>
+                            To the maximum extent permitted by law, the Company
+                            will not be liable for indirect, incidental,
+                            special or consequential losses arising from the
+                            use of the services.
+                        </p>
+
+                        <p>
+                            Nothing in these Terms excludes liability for
+                            matters that cannot legally be excluded or
+                            limited, including liability arising from fraud
+                            or wilful misconduct where applicable.
+                        </p>
+
+                        <p>
+                            Any other limitation of liability will apply only
+                            to the extent legally enforceable.
+                        </p>
+                    </section>
+
+                    <!-- SECTION 18 -->
+                    <section class="legal-card" id="section-18">
+                        <div class="section-heading">
+                            <div class="section-number">18</div>
+                            <h2>Indemnification</h2>
+                        </div>
+
+                        <p>
+                            Customers are responsible for claims arising from
+                            their unlawful use of CallMetrics, unauthorised
+                            employee monitoring, unlawful call recording,
+                            violation of third-party rights or breach of these
+                            Terms.
+                        </p>
+
+                        <p>
+                            Any indemnification obligation will apply to the
+                            extent permitted by applicable law and will not
+                            remove any non-excludable statutory rights.
+                        </p>
+                    </section>
+
+                    <!-- SECTION 19 -->
+                    <section class="legal-card" id="section-19">
+                        <div class="section-heading">
+                            <div class="section-number">19</div>
+                            <h2>Amendments</h2>
+                        </div>
+
+                        <p>
+                            We may update these Terms from time to time.
+                        </p>
+
+                        <p>
+                            Changes will be published on our website with an
+                            updated effective date.
+                        </p>
+
+                        <p>
+                            Where required, customers will receive notice
+                            before material changes take effect.
+                        </p>
+                    </section>
+
+                    <!-- SECTION 20 -->
+                    <section class="legal-card" id="section-20">
+                        <div class="section-heading">
+                            <div class="section-number">20</div>
+                            <h2>Governing Law and Jurisdiction</h2>
+                        </div>
+
+                        <p>
+                            These Terms are governed by the laws of India.
+                        </p>
+
+                        <p>
+                            Subject to applicable consumer rights and mandatory
+                            legal requirements, courts having competent
+                            jurisdiction at [Insert City and State] shall have
+                            jurisdiction over disputes arising from these
+                            Terms.
+                        </p>
+                    </section>
+
+                    <!-- SECTION 21 -->
+                    <section class="legal-card" id="section-21">
+                        <div class="section-heading">
+                            <div class="section-number">21</div>
+                            <h2>Contact Details</h2>
+                        </div>
+
+                        <p>
+                            <strong>Legal Entity:</strong> GRANDBIZ LEARNING
+                            SOLUTIONS LLP
+                        </p>
+
+                        <p>
+                            <strong>Brand:</strong> CallMetrics
+                        </p>
+
+                        <p>
+                            <strong>Website:</strong>
+                            <a href="https://www.callmetrics.tech"
+                                target="_blank" rel="noopener noreferrer">
+                                https://www.callmetrics.tech
+                            </a>
+                        </p>
+
+                        <p>
+                            <strong>Email:</strong>
+                            <a href="mailto:support@callmetrics.tech">
+                                support@callmetrics.tech
+                            </a>
+                        </p>
+
+                        <p>
+                            <strong>Registered Office:</strong> 212-213, 2nd
+                            Floor, Paradise Tower, Gokhale Rd, next to
+                            Mc.Donald, Naupada, Thane West, Thane, Maharashtra
+                            400602
+                        </p>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+   
+<!-- FOOTER -->
+<footer class="foot">
+    <div class="wrap fg">
+
+        <!-- BRAND -->
+        <div class="foot-brand">
+            <a href="index.html" class="foot-logo" aria-label="CallMetrics home">
+                <img src="img/White Logo.png" alt="CallMetrics">
+            </a>
+
+            <p class="foot-description">
+                Call tracking and team analytics for teams that work on the phone.
+            </p>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="foot-contact">
+            <h4>Contact Us</h4>
+
+            <div class="contact-links">
+                <a href="mailto:support@callmetrics.org">
+                    <!-- <span class="contact-icon">✉</span> -->
+                    support@callmetrics.org
+                </a>
+
+                <a href="tel:+919987653456">
+                    <!-- <span class="contact-icon">☎</span> -->
+                    +91 99876 53456
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="wrap fb">
+        <div>
+            © <span id="yr"></span> CallMetrics. All rights reserved.
+        </div>
+
+        <div class="fb-links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-and-conditions.html">Terms and Conditions</a>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" id="backToTop"
+        aria-label="Back to top">
+        ↑
+    </button>
+
+    <script>
+        // Mobile navigation
+        const menuToggle = document.getElementById("menuToggle");
+        const headerActions = document.getElementById("headerActions");
+
+        menuToggle.addEventListener("click", function () {
+            const isOpen = headerActions.classList.toggle("open");
+
+            menuToggle.setAttribute("aria-expanded", isOpen);
+            menuToggle.innerHTML = isOpen ? "&times;" : "☰";
+        });
+
+        // Close mobile navigation after clicking a link
+        document.querySelectorAll(".header-actions a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                headerActions.classList.remove("open");
+                menuToggle.setAttribute("aria-expanded", "false");
+                menuToggle.innerHTML = "☰";
+            });
+        });
+
+        // Dynamic copyright year
+        document.getElementById("currentYear").textContent =
+            new Date().getFullYear();
+
+        // Back to top button
+        const backToTop = document.getElementById("backToTop");
+
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 350) {
+                backToTop.classList.add("show");
+            } else {
+                backToTop.classList.remove("show");
+            }
+        });
+
+        backToTop.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+
+        // Active table of contents
+        const sections = document.querySelectorAll(".legal-card");
+        const tocLinks = document.querySelectorAll(".toc-list a");
+
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    const currentId = entry.target.getAttribute("id");
+
+                    tocLinks.forEach(function (link) {
+                        link.classList.remove("active");
+
+                        if (link.getAttribute("href") === "#" + currentId) {
+                            link.classList.add("active");
+                        }
+                    });
+                }
+            });
+        }, {
+            rootMargin: "-20% 0px -65% 0px",
+            threshold: 0
+        });
+
+        sections.forEach(function (section) {
+            observer.observe(section);
+        });
+
+        // Smooth table of contents navigation
+        tocLinks.forEach(function (link) {
+            link.addEventListener("click", function (event) {
+                event.preventDefault();
+
+                const targetId = this.getAttribute("href");
+                const target = document.querySelector(targetId);
+
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+
+                    history.replaceState(null, "", targetId);
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
